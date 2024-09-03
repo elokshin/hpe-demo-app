@@ -7,7 +7,10 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<name>Discover Demo App - Tribute to Progressive Music (Web App)</name>
-
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
@@ -46,7 +49,7 @@
 			<plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.7.5.201505241946</version>
+        <version>0.8.8</version>
         <configuration>
           <output>file</output>
           <append>true</append>
@@ -78,7 +81,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <!-- Minimal supported version is 2.4 -->
-            <version>2.13</version>
+            <version>3.0.0-M2</version>
             <configuration>
               <properties>
                 <property>
